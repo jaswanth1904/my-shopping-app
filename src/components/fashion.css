@@ -1,0 +1,76 @@
+.App {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  .hero h2 {
+    margin-bottom: 10px;
+  }
+  
+  .hero .btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .hero .btn:hover {
+    background-color: #555;
+  }
+  
+  .featured {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .featured .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .featured .product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+  .featured .product img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
