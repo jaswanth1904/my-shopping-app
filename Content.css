@@ -1,0 +1,292 @@
+/* General Styling */
+.content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.categories, .product-list, .reviews, .additional-content, .blogs, .faqs, .testimonials {
+  margin-bottom: 40px;
+}
+
+.categories h2, .product-list h2, .reviews h2, .additional-content h2, .blogs h2, .faqs h2, .testimonials h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+  font-weight: bold;
+}
+
+.category-grid, .product-grid, .review-grid, .blog-grid, .faq-grid, .testimonial-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.category-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.review-grid, .faq-grid, .testimonial-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.blog-grid {
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+/* Cards Styling */
+.category-item, .product-item, .review-item, .blog-item, .faq-item, .testimonial-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.category-item:hover, .product-item:hover, .review-item:hover, .blog-item:hover, .faq-item:hover, .testimonial-item:hover {
+  transform: scale(1.06);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img, .product-item img, .blog-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-item img:hover, .product-item img:hover, .blog-item img:hover {
+  transform: scale(1.1);
+}
+
+.category-item h4, .product-item h4, .blog-item h4, .faq-item h4, .testimonial-item h4 {
+  margin: 12px 0;
+  color: #222;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-item p, .blog-item p, .faq-item p, .testimonial-item p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Join Us Section */
+.join-us {
+  background: linear-gradient(135deg, #f9a826, #ff6f61);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.join-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.join-us p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.join-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  width: 260px;
+}
+
+.join-form button {
+  padding: 12px 22px;
+  font-size: 1rem;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.join-form button:hover {
+  background: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+
+  .categories h2, .product-list h2, .reviews h2, .additional-content h2, .blogs h2, .faqs h2, .testimonials h2 {
+    font-size: 22px;
+  }
+
+  .category-grid, .product-grid, .review-grid, .blog-grid, .faq-grid, .testimonial-grid {
+    gap: 10px;
+  }
+
+  .category-item, .product-item, .review-item, .blog-item, .faq-item, .testimonial-item {
+    padding: 10px;
+  }
+
+  .product-item p, .blog-item p, .faq-item p, .testimonial-item p {
+    font-size: 14px;
+  }
+
+  .review-item p {
+    font-size: 14px;
+  }
+
+  .additional-content p {
+    font-size: 16px;
+  }
+
+  .join-form {
+    flex-direction: column;
+  }
+
+  .join-form input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+/* Blog/Content Section */
+.blog-item {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Promotions Section */
+.promotions {
+  background: linear-gradient(135deg, #ffdf8c, #ff6f61);
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+  border-radius: 8px;
+}
+
+/* Newsletter Signup */
+.newsletter {
+  text-align: center;
+  padding: 25px;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.newsletter input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+  background: #0056b3;
+}
+
+/* FAQs */
+.faqs {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.faq-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-item h4 {
+  font-size: 18px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Account Management */
+.account-management {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Live Chat */
+.live-chat {
+  text-align: center;
+  padding: 25px;
+}
+
+.live-chat button {
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.live-chat button:hover {
+  background: #1e7e34;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
